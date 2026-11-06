@@ -1,0 +1,12 @@
+<% content_for :title, "Editing git" %>
+
+<h1>Editing git</h1>
+
+<%= render "form", git: @git %>
+
+<br>
+
+<div>
+  <%= link_to "Show this git", @git %> |
+  <%= link_to "Back to gits", gits_path %>
+</div>

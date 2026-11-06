@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Gits" %>
+
+<h1>Gits</h1>
+
+<div id="gits">
+  <% @gits.each do |git| %>
+    <%= render git %>
+    <p>
+      <%= link_to "Show this git", git %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New git", new_git_path %>

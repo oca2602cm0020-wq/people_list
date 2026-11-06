@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @git %>
+
+<div>
+  <%= link_to "Edit this git", edit_git_path(@git) %> |
+  <%= link_to "Back to gits", gits_path %>
+
+  <%= button_to "Destroy this git", @git, method: :delete %>
+</div>
